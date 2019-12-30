@@ -1,0 +1,228 @@
+/* mobile.css */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  /* background: #f00; */
+}
+
+#title .title > h2 {
+  line-height: 1em;
+}
+#main_header {
+  text-align: center; 
+}
+#main_header > .container {
+  padding: 10px;
+}
+#main_header h1 { 
+  position: fixed;
+  left: 50%; top: 0px;
+  transform: translateX(-50%);
+  z-index: 9;
+  background: #666;
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+}
+#main_header h1 img{
+  position: absolute;
+  top: 12px;
+  width: 45px;
+}
+#main_gnb {
+  margin-top: 10px;
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.1);
+}
+#main_gnb a:hover{
+  color: #333;
+  font-weight: bold;
+}
+#util a:hover{
+  color: #333;
+  font-weight: bold;
+}
+#util {
+  margin-bottom: 10px;
+}
+.nav_group {
+  position: fixed;
+  left: 0; top: 0px;
+  width: 100%;
+  height: 0;
+  background: #fff;
+  color: #666;
+  /* opacity: 0; */
+  overflow: hidden;
+  transition: 0.4s;
+  z-index: 9;
+}
+.nav_group  li {
+  margin: 1.4em 0;
+}
+.nav_group.show {
+  height: 510px;
+}
+
+/* 메뉴 슬라이드 다운 시 글자색 반전 */
+.nav_group + #toggle > i {
+  color: #fff;
+}
+.nav_group.show + #toggle > i {
+  color: #666;
+}
+
+#toggle {
+  position: fixed;
+  left: 10px; top: 16px;
+  z-index: 10;
+}
+#toggle > i { 
+  /* color: #666; */
+  font-size: 24px;
+}
+#util .fa-shopping-bag {
+  position: fixed;
+  /* top: 16; */
+  right: 20px; top: 16px;
+  font-size: 24px;
+  color: #fff;
+  
+}
+
+/* 신제품 섹션 */
+#new_product ul{
+    overflow: hidden;
+}
+#new_product .product_list > li{
+    width: 100%;
+    float: left;
+    margin-bottom: 50px;
+}
+#new_product .product_list > li img{
+    width: 100%;
+}
+#new_product .product_list .title{
+  display: block;
+  font-weight: bold;
+  font-size: 17px;
+  padding-top: 10px;
+}
+#new_product .product_list .price{
+  font-weight: bold;
+  font-size: 1.2em;
+  color: rgb(218, 0, 0);
+  margin-right: 0.5em;
+}
+#new_product .product_list .origin_price{
+  font-size: 16px;
+  color: #999;
+}
+
+/* 이벤트 섹션 좌우 여백 줄이기 */
+#event .title{
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* 뉴스섹션 */
+#news article{
+    width: 100%;
+    /* float: left; */
+    margin-right: 1.5%;
+    outline: 1px solid green;
+}
+
+/* 핫아이템 */
+#hot{
+  padding-bottom: 130px;
+}
+#hot .hot_wrap .slider .text{
+  padding-top: 8px;
+  text-align: left;
+  padding-left: 15px;
+  line-height: 1.8em;
+} 
+#hot .hot_wrap .slider .text .title{
+  color: #000;
+}
+#hot .hot_wrap .slider .text .price{
+  color: rgb(218, 0, 0);
+  padding-right: 10px;
+}
+#hot .hot_wrap .slider .text .origin_price{
+  color: #999;
+}
+#hot .hot_wrap .slider .text .color{
+  font-size: 13px;
+  color: #999;
+}
+
+/* bxslider */
+#hot .hot_wrap .slider{
+  margin: 0 auto;
+  width: 767px;
+}
+/* bx slider 아이콘 위치 */
+.bx-wrapper .bx-controls-direction a{
+  top: 37%;
+}
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager{
+  bottom: -90px;
+}
+
+/* 푸터 */
+#main_footer{
+  background: #f0f0f0;
+  font-size: 13px;
+  text-align: center;
+}
+#main_footer .sub_bar{
+  background: #000;
+  color: #fff;
+}
+#main_footer .sub_bar .sub_bar_wrap{
+  background: #000;
+  /* outline: 1px solid red; */
+  margin: 0 auto;
+}
+#main_footer .sub_bar .sub_bar_wrap ul li{
+  display: inline;
+  padding-top: 30px;
+  padding-left: 5px;
+  line-height: 50px;
+}
+#main_footer .sub_bar .sub_bar_wrap ul li:first-child{
+  padding-left: 0;
+}
+#main_footer .sub_bar .sub_bar_wrap ul .sns li a{
+  font-size: 17px;
+}
+#main_footer .sub_bar .sub_bar_wrap ul .sns li{
+  padding-left: 25px;
+}
+#main_footer .container ul li{
+  display: inline-block;
+  color: #888;
+  padding-left: 5px;
+}
+#main_footer .container ul:first-child{
+  padding-top: 40px;
+}
+#main_footer .container ul li:first-child{
+  padding-left: 0;
+}
+#main_footer .container .sub_bar2 ul li{
+  padding-top: 5px;
+  padding-left: 5px;
+  display: inline-block;
+}
+#main_footer .container .sub_bar2 ul li:last-child{
+  padding-bottom: 20px;
+}
+#main_footer .container .sub_bar2 ul li:first-child{
+  padding-left: 0;
+}
+#main_footer .container .sub_bar2 ul li span{
+  font-weight: bold;
+}

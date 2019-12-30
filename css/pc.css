@@ -1,0 +1,203 @@
+/* pc.css */
+.container{
+    /* background: #ff0; */
+    /* outline: 1px solid red; */
+    max-width: 1200px; /* 가변 최대 1200px */
+    margin: 0 auto;
+}
+#main_header > .container{
+    position: relative;
+}
+#main_header > .container > h1{
+    position: relative;
+    left: 20; top: 13px;
+}
+#main_header > .container #main_gnb{
+    position: absolute;
+    right: 220px; top: 30px;
+}
+#main_header > .container #main_gnb li{
+    display: inline-block;
+    margin-left: 1em; margin-right: 1em;
+}
+#main_header > .container #main_gnb li:last-child{
+    padding-right: 30px;
+}
+#main_header > .container #util{
+    position: absolute;
+    right: 0; top: 30px;
+}
+#main_header > .container #util li{
+    display: inline-block;
+    margin-left: 0.5em; margin-right: 0.7em;
+}
+#main_gnb, #util{
+    font-size: 15px;
+}
+
+/* gnb hover */
+#main_gnb a:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+}
+#util a:hover{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 토글메뉴, 장바구니 아이콘 비표시 처리 */
+#toggle, #utile i.fas-shopping-bag {
+    display: none;
+}
+
+/* 신제품 영역 */
+#new_product{
+
+}
+#new_product .product_list{
+    overflow: hidden;
+    /* outline: 1px solid red; */
+}
+#new_product .product_list > li{
+    /* width: 386.66px; */
+    width: 32.33%;
+    float: left;
+    /* margin-right: 20px; */
+    margin-right: 1.5%;
+}
+#new_product .product_list > li img{
+    width: 100%;
+}
+#new_product .product_list > li:last-child{
+    margin-right: 0;
+}
+#new_product .product_list > li{
+    display: block;
+  }
+#new_product .product_list .title{
+    display: block;
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 10px;
+  }
+#new_product .product_list .price{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgb(218, 0, 0);
+    margin-right: 0.5em;
+}
+#new_product .product_list .origin_price{
+    font-size: 16px;
+    color: #999;
+}
+
+/* 뉴스섹션 */
+#news{}
+#news .container{
+    overflow: hidden;
+    /* outline: 1px solid red; */
+}
+#news article{
+    width: 49.25%;
+    float: left;
+    margin-right: 1.5%;
+    /* outline: 1px solid green; */
+}
+#news article:last-child{
+    margin-right: 0;
+}
+
+/* 핫아이템 */
+#hot{
+    padding-bottom: 130px;
+}
+#hot .hot_wrap .slider .text{
+    padding-top: 8px;
+    text-align: left;
+    padding-left: 15px;
+    line-height: 1.8em;
+} 
+#hot .hot_wrap .slider .text .title{
+    color: #000;
+}
+#hot .hot_wrap .slider .text .price{
+    color: rgb(218, 0, 0);
+    padding-right: 10px;
+}
+#hot .hot_wrap .slider .text .origin_price{
+    color: #999;
+}
+#hot .hot_wrap .slider .text .color{
+    font-size: 13px;
+    color: #999;
+}
+
+/* bxslider */
+#hot .hot_wrap{
+    margin: 0 auto;
+    width: 1200px;
+}
+/* bx slider 테두리 제거 */
+.bx-wrapper{
+    border: none !important;
+    box-shadow: none !important;
+}
+/* bx slider 아이콘 위치 */
+.bx-wrapper .bx-controls-direction a{
+    top: 37%;
+}
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager{
+    bottom: -90px;
+}
+
+/* 푸터 */
+#main_footer{
+    background: #f0f0f0;
+    font-size: 13px;
+}
+#main_footer .sub_bar{
+    background: #000;
+    width: 100%;
+    color: #fff;
+}
+#main_footer .sub_bar .sub_bar_wrap{
+    background: #000;
+    /* outline: 1px solid red; */
+    width: 1200px;
+    margin: 0 auto;
+}
+#main_footer .sub_bar .sub_bar_wrap ul li{
+    display: inline-block;
+    padding-left: 20px;
+    height: 50px;
+    line-height: 50px;
+}
+#main_footer .sub_bar .sub_bar_wrap ul li:first-child{
+    padding-left: 0;
+}
+#main_footer .sub_bar .sub_bar_wrap ul .sns{
+    float: right;
+    font-size: 17px;
+}
+#main_footer .container ul li{
+    display: inline-block;
+    color: #888;
+    padding-left: 13px;
+}
+#main_footer .container ul:first-child{
+    padding-top: 20px;
+}
+#main_footer .container ul li:first-child{
+    padding-left: 0;
+}
+#main_footer .container .sub_bar2 ul li{
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+#main_footer .container .sub_bar2 ul li:first-child{
+    padding-left: 0;
+}
+#main_footer .container .sub_bar2 ul li span{
+    font-weight: bold;
+}
