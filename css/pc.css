@@ -10,7 +10,7 @@
 }
 #main_header > .container > h1{
     position: relative;
-    left: 20; top: 13px;
+    left: 20; top: 16px;
 }
 #main_header > .container #main_gnb{
     position: absolute;
@@ -19,6 +19,7 @@
 #main_header > .container #main_gnb li{
     display: inline-block;
     margin-left: 1em; margin-right: 1em;
+    font-size: 16px;
 }
 #main_header > .container #main_gnb li:last-child{
     padding-right: 30px;
@@ -30,6 +31,7 @@
 #main_header > .container #util li{
     display: inline-block;
     margin-left: 0.5em; margin-right: 0.7em;
+    font-size: 16px;
 }
 #main_gnb, #util{
     font-size: 15px;
