@@ -7,6 +7,11 @@
 
 #title .title > h2 {
   line-height: 1em;
+  font-size: 65px;
+}
+#title .title > p{
+  font-size: 20px;
+  line-height: 1.4em;
 }
 #main_header {
   text-align: center; 
@@ -26,9 +31,9 @@
 }
 #main_header h1 img{
   position: absolute;
-  top: 12px;
+  top: 27px;
   width: 45px;
-  left: 45%;
+  transform: translate(-50%, -50%);
 }
 #main_gnb {
   margin-top: 10px;
@@ -72,6 +77,7 @@
   color: #666;
 }
 
+
 #toggle {
   position: fixed;
   left: 10px; top: 16px;
@@ -80,14 +86,23 @@
 #toggle > i { 
   /* color: #666; */
   font-size: 24px;
+  margin-left: 5px;
+  /* outline: 1px solid red; */
 }
 #util .fa-shopping-bag {
   position: fixed;
   /* top: 16; */
-  right: 20px; top: 16px;
+  right: 15px; top: 16px;
   font-size: 24px;
   color: #fff;
-  
+}
+
+
+/* 토글메뉴, 장바구니 아이콘 비표시 처리 */
+.nav_group.show #util .fa-shopping-bag {
+  display: none;
+  /* outline: 1px solid red */
+  z-index: -1000;
 }
 
 /* 신제품 섹션 */
